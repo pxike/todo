@@ -1,7 +1,14 @@
-module.exports = {
-  transform: {
-    '^.+\\.js$': 'babel-jest',
+module.exports =  {
+  "verbose": true,
+  "testEnvironment": "jsdom",
+  "transform": {
+    "^.+\\.(js|jsx)$": "babel-jest"
   },
-    setupFilesAfterEnv: ['./jest.setup.js'],
-    testEnvironment: 'jest-environment-jsdom',
-  };
+  "moduleFileExtensions": [
+    "js",
+    "jsx"
+  ],
+  moduleNameMapper: {
+    "\\.(css|less|sass|scss)$": "identity-obj-proxy",
+  },
+};

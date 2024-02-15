@@ -1,6 +1,6 @@
 // App.test.js
 import { render, fireEvent } from '@testing-library/react';
-import App from './App';
+import App from './App.jsx';
 
 
 test('renders Todo App header', () => {
